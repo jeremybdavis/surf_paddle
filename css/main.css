@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background: url(../assets/header.jpg);
+  height: 523px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/***************
+  NAVIGATION
+ ****************/
+
+#logo h1 {
+  height: 45px;
+  position: relative;
+  top: 10px;
+  left: 11%;
+  margin: 0;
+  line-height: 44px;
+
+  /**** FONT ****/
+
+  color: #01344E;
+  font-size: 1.05em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  /**** BACKGROUND IMAGE ****/
+  background-image: url(../assets/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 0 0 55px;
+}
+
+
+nav {
+    float: right;
+}
+nav li {
+  display: inline-block;
+  margin: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25em;
+  position: relative;
+  top: -50px;
+  right: 85%;
+}
+
+nav li a {
+  color: #01344E;
+}
+
+/*
+.main-header h2 {
+  color: white;
+  line-height: 5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 6em;
+  position: absolute;
+  padding: 0 0 0 65px;
+}
+
+.main-header h3 {
+  margin: 0;
+  color: #01344E;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.90em;
+  line-height: 43;
+  text-align: center;
+  }*/
