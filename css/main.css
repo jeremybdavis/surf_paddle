@@ -6,6 +6,14 @@ a {
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
 .main-header {
   background: url(../assets/header.jpg);
   height: 523px;
@@ -30,7 +38,6 @@ a {
 
   /**** FONT ****/
 
-  color: #01344E;
   font-size: 1.05em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -56,10 +63,6 @@ nav li {
   right: 85%;
 }
 
-nav li a {
-  color: #01344E;
-}
-
 /****
   MAIN HEADER TEXT
 ****/
@@ -76,7 +79,6 @@ nav li a {
 }
 
 .main-header h3 {
-  color: #01344E;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 0.90em;
@@ -84,3 +86,106 @@ nav li a {
   position: relative;
   top: -30px;
   }
+
+  /****
+    PRIMARY CONTENT
+  ****/
+  .primary-content {
+    margin: 30px 75px 0 75px;
+    padding: 30px 75px 0 75px;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .primary-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 70px;
+    margin: 0;
+  }
+
+  .primary-content p {
+    color: #5D686E;
+    margin: 0 0 30px 0;
+    line-height: 25px;
+  }
+
+  .primary-content a {
+    text-decoration: underline;
+  }
+
+  .author > a {
+    background: url(../assets/avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+
+    padding: 0 0 0 30px;
+    margin: 8px 0;
+    height: 22px;
+
+    font-size: 0.8em;
+    line-height: 25px;
+  }
+
+  .author p {
+    display: inline-block;
+    font-size: 0.8em;
+  }
+
+.highlight {
+  margin: 0 0 30px 0;
+}
+.highlight h2 {
+  font-weight: 400;
+  border-left: 2px solid #B1BBC2;
+  margin: 0px;
+  padding: 10px 0 0 10px;
+}
+
+.share li {
+  display: inline-block;
+  background-color: #A2B3BE;
+}
+
+.share img {
+  background-color: #5D686E;
+}
+
+.share {
+  padding: 0;
+  height: 16px;
+}
+
+.share a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+
+
+
+/****
+SIDEBAR
+****/
+  .sidebar {
+    width: 40%;
+  }
+
+/****
+COLORS
+ ****/
+
+ .p3 a, .highlight h2, .author > a {
+   color: #006FAE;
+ }
+
+ .p2 a, .author p, .author p > a {
+   color: #A2B3BE;
+ }
+
+.primary-content h1, .main-header h3, nav li a, #logo h1 {
+  color: #01344E;
+}
