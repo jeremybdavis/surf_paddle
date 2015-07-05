@@ -24,6 +24,11 @@ li {
   position: relative;
 }
 
+main {
+  margin: 60px 150px 0 150px;
+  position: absolute;
+}
+
 /***************
   NAVIGATION
  ****************/
@@ -91,10 +96,9 @@ nav li {
     PRIMARY CONTENT
   ****/
   .primary-content {
-    margin: 30px 75px 0 75px;
-    padding: 30px 75px 0 75px;
-    width: 60%;
+    width: 61%;
     font-family: 'Open Sans', sans-serif;
+    float: left;
   }
 
   .primary-content h1 {
@@ -107,7 +111,7 @@ nav li {
 
   .primary-content p {
     color: #5D686E;
-    margin: 0 0 30px 0;
+    margin: 0 0 25px 0;
     line-height: 25px;
   }
 
@@ -129,7 +133,7 @@ nav li {
     line-height: 25px;
   }
 
-  .author p {
+.author p {
     display: inline-block;
     font-size: 0.8em;
   }
@@ -146,33 +150,42 @@ nav li {
 
 .share li {
   display: inline-block;
-  background-color: #A2B3BE;
-}
-
-.share img {
-  background-color: #5D686E;
 }
 
 .share {
   padding: 0;
-  height: 16px;
 }
 
 .share a {
   text-decoration: none;
   color: white;
   font-size: 0.8em;
+  padding: 5px 12px 5px 0;
+  margin: 0 5px 0 0;
 }
 
-
+.share img {
+padding: 6px;
+position: relative;
+top: 9px;
+margin: 0 12px 0 0;
+}
 
 
 /****
 SIDEBAR
 ****/
   .sidebar {
-    width: 40%;
+    width: 39%;
+    float: right;
+    position: relative;
   }
+
+  /****
+  PRE FOOTER
+  ****/
+
+  /*border-bottom: 1px solid #D0D4D7;*/
 
 /****
 COLORS
@@ -188,4 +201,20 @@ COLORS
 
 .primary-content h1, .main-header h3, nav li a, #logo h1 {
   color: #01344E;
+}
+
+#comments a, #save a {
+  background-color: #A2B3BE;
+}
+
+#comments img, #save img {
+  background-color: #5D686E;
+}
+
+#share-post a {
+  background-color: #006FAE;
+}
+
+#share-post img {
+  background-color: #01344E;
 }
