@@ -8,6 +8,7 @@ a {
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 li {
@@ -176,6 +177,7 @@ SIDEBAR
     float: right;
     position: relative;
     top: 22px;
+    overflow: auto;
   }
 
   .sidebar img:nth-child(1) {
@@ -238,12 +240,37 @@ SIDEBAR
 
 .pre-footer li {
   display: inline-block;
+  float: left;
+  width: 25%;
 }
 
 .article-links {
   padding: 0;
   margin: 0;
 }
+
+#article-image-1 h2 {
+  background-image: url(../assets/article-image-1.jpg);
+}
+
+#article-image-2 h2 {
+  background-image: url(../assets/article-image-2.jpg);
+}
+
+#article-image-3 h2 {
+  background-image: url(../assets/article-image-3.jpg);
+}
+
+#article-image-4 h2 {
+  background-image: url(../assets/article-image-4.jpg);
+}
+
+#article-image-1 h2, #article-image-2 h2, #article-image-3 h2, #article-image-4 h2 {
+  height: 330px;
+  background-repeat: no-repeat;
+
+}
+
 
 /****
 COLORS
