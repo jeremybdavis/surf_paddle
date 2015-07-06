@@ -25,8 +25,7 @@ li {
 }
 
 main {
-  margin: 60px 150px 0 150px;
-  position: absolute;
+  margin: 60px 12% 0 12%;
 }
 
 /***************
@@ -44,7 +43,6 @@ main {
   /**** FONT ****/
 
   font-size: 1.05em;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 
   /**** BACKGROUND IMAGE ****/
@@ -61,7 +59,6 @@ nav {
 nav li {
   display: inline-block;
   margin: 5px;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.15em;
   position: relative;
   top: -50px;
@@ -74,7 +71,6 @@ nav li {
 
 .main-header h2 {
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 6em;
   position: relative;
@@ -84,7 +80,6 @@ nav li {
 }
 
 .main-header h3 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 0.90em;
   text-align: center;
@@ -96,13 +91,12 @@ nav li {
     PRIMARY CONTENT
   ****/
   .primary-content {
-    width: 61%;
-    font-family: 'Open Sans', sans-serif;
+    width: 63%;
     float: left;
+    margin: 0 75px 0 0;
   }
 
   .primary-content h1 {
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 4em;
     line-height: 70px;
@@ -124,6 +118,7 @@ nav li {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    text-decoration: none;
 
     padding: 0 0 0 30px;
     margin: 8px 0;
@@ -154,6 +149,7 @@ nav li {
 
 .share {
   padding: 0;
+  margin: 0 0 70px 0;
 }
 
 .share a {
@@ -176,30 +172,92 @@ margin: 0 12px 0 0;
 SIDEBAR
 ****/
   .sidebar {
-    width: 39%;
+    width: 28.5%;
     float: right;
     position: relative;
+    top: 22px;
   }
+
+  .sidebar img:nth-child(1) {
+    position: relative;
+    left: 36%;
+  }
+
+  .sidebar h1 {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0 3px 0;
+  }
+
+  .social-links {
+    text-align: center;
+    padding: 0 0 32px 0;
+    margin: 0;
+    font-size: 0.85em;
+  }
+
+  .social-links li {
+    display: inline-block;
+  }
+
+  .ad-link {
+    float: right;
+    text-decoration: underline;
+    font-size: 0.85em;
+  }
+
+.sidebar h2 {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 70px 0 0 0;
+  }
+
+.sidebar p {
+  font-size: 0.85em;
+  margin: 5px 0 0 0;
+  line-height: 23px;
+}
+
 
   /****
   PRE FOOTER
   ****/
 
-  /*border-bottom: 1px solid #D0D4D7;*/
+.pre-footer {
+  clear: both;
+}
+.pre-footer h1 {
+  text-align: center;
+  border-top: 1px solid #D0D4D7;
+  padding: 35px 0;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.pre-footer li {
+  display: inline-block;
+}
+
+.article-links {
+  padding: 0;
+  margin: 0;
+}
 
 /****
 COLORS
  ****/
 
- .p3 a, .highlight h2, .author > a {
+ .p3 a, .highlight h2, .author > a, .sidebar h1, .sidebar h2 {
    color: #006FAE;
  }
 
- .p2 a, .author p, .author p > a {
+ .p2 a, .author p, .author p > a, .social-links a, .ad-link, .sidebar p {
    color: #A2B3BE;
  }
 
-.primary-content h1, .main-header h3, nav li a, #logo h1 {
+.primary-content h1, .main-header h3, nav li a, #logo h1, .pre-footer h1 {
   color: #01344E;
 }
 
@@ -217,4 +275,16 @@ COLORS
 
 #share-post img {
   background-color: #01344E;
+}
+
+/****
+FONTS
+****/
+
+.sidebar h2, nav li, .primary-content h1, .pre-footer h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#logo h1, .main-header h2, .main-header h3, .primary-content, .sidebar {
+  font-family: 'Open Sans', sans-serif;
 }
