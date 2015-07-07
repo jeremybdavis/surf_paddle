@@ -252,6 +252,14 @@ SIDEBAR
   opacity: 0.4;
 }
 
+.article-image img:hover {
+  opacity: 0.7;
+}
+
+.article-image img:active {
+  border: 4px solid #fff;
+}
+
 #article-title-1, #article-title-2, #article-title-3, #article-title-4 {
   position: absolute;
   top: 275px;
