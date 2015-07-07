@@ -71,7 +71,6 @@ nav li {
 ****/
 
 .main-header h2 {
-  color: white;
   font-weight: 400;
   font-size: 6em;
   position: relative;
@@ -155,7 +154,6 @@ nav li {
 
 .share a {
   text-decoration: none;
-  color: white;
   font-size: 0.8em;
   padding: 5px 12px 5px 0;
   margin: 0 5px 0 0;
@@ -244,38 +242,83 @@ SIDEBAR
   width: 25%;
 }
 
+.article-image {
+  position: relative;
+  height: 330px;
+  background-color: #006FAE;
+}
+
+.article-image img {
+  opacity: 0.4;
+}
+
+#article-title-1, #article-title-2, #article-title-3, #article-title-4 {
+  position: absolute;
+  top: 275px;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+#article-title-3 {
+  top: 242px;
+  line-height: 38px;
+}
+
 .article-links {
   padding: 0;
   margin: 0;
 }
 
-#article-image-1 h2 {
-  background-image: url(../assets/article-image-1.jpg);
+/****
+FOOTER
+****/
+footer {
+  clear: both;
+  padding: 25px 13% 30px 13%;
+  overflow: auto;
+  position: relative;
 }
 
-#article-image-2 h2 {
-  background-image: url(../assets/article-image-2.jpg);
+footer li {
+  display: inline-block;
+  padding: 0px 2.5%;
 }
 
-#article-image-3 h2 {
-  background-image: url(../assets/article-image-3.jpg);
+.footer-link {
+  border-right: 1px solid white;
 }
 
-#article-image-4 h2 {
-  background-image: url(../assets/article-image-4.jpg);
+footer p {
+  display: inline-block;
+  top: 39px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 17.5%;
+  font-weight: 300;
+  font-size: 0.85em;
 }
 
-#article-image-1 h2, #article-image-2 h2, #article-image-3 h2, #article-image-4 h2 {
-  height: 330px;
-  background-repeat: no-repeat;
-
+.bottom-nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10%;
+  top: 39px;
+  font-weight: 300;
+  font-size: 0.85em;
+  width: 30%;
 }
-
 
 /****
 COLORS
  ****/
 
+.main-header h2, .share a, footer p, .bottom-nav a, #article-title-2 {
+  color: #fff;
+}
  .p3 a, .highlight h2, .author > a, .sidebar h1, .sidebar h2 {
    color: #006FAE;
  }
@@ -284,7 +327,8 @@ COLORS
    color: #A2B3BE;
  }
 
-.primary-content h1, .main-header h3, nav li a, #logo h1, .pre-footer h1 {
+.primary-content h1, .main-header h3, nav li a, #logo h1, .pre-footer h1,
+#article-title-1, #article-title-3, #article-title-4 {
   color: #01344E;
 }
 
@@ -300,7 +344,7 @@ COLORS
   background-color: #006FAE;
 }
 
-#share-post img {
+#share-post img, footer {
   background-color: #01344E;
 }
 
@@ -308,10 +352,10 @@ COLORS
 FONTS
 ****/
 
-.sidebar h2, nav li, .primary-content h1, .pre-footer h1 {
+.sidebar h2, nav li, .primary-content h1, .pre-footer {
   font-family: 'Oswald', sans-serif;
 }
 
-#logo h1, .main-header h2, .main-header h3, .primary-content, .sidebar {
+#logo h1, .main-header h2, .main-header h3, .primary-content, .sidebar, footer {
   font-family: 'Open Sans', sans-serif;
 }
