@@ -253,7 +253,8 @@ SIDEBAR
 }
 
 .article-image img:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transition: 1s ease all;
 }
 
 .article-image img:active {
